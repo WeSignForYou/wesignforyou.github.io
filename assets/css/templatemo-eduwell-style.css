@@ -1188,7 +1188,9 @@ section.contact-us .contact-info span a {
   font-size: 15px;
   color: #dc8cdb !important;
   font-weight: 700;
-  text-decoration: underline dashed 0.1em !important;
+  text-decoration-line: underline !important;
+  text-decoration-style: dashed !important;
+  text-decoration-thickness: 0.1em !important;
   text-underline-offset: 0.4em;
 }
 
