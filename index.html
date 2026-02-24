@@ -1,520 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <title>WeSignForYou Notary Services</title>
-    <link rel="icon" href="assets/images/favicon.png" type="image/png">
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-  </head>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WeSignForYou - Professional Mobile Notary Services in Milpitas & Bay Area. Available 24/7.">
+  <title>WeSignForYou Notary Services</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
 
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <nav class="main-nav">
-                      <!-- ***** Logo Start ***** -->
-                      <a href="index.html" class="logo">
-                          <img src="assets/images/navbar-title.png" alt="WeSignForYou">
-                      </a>
-                      <!-- ***** Logo End ***** -->
-                      <!-- ***** Menu Start ***** -->
-                      <ul class="nav">
-                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                          <li class="scroll-to-section"><a href="#services">Services</a></li>
-                          <!-- <li class="scroll-to-section"><a href="#courses">Courses</a></li> -->
-                          <!-- <li class="has-sub">
-                              <a href="javascript:void(0)">Pages</a>
-                              <ul class="sub-menu">
-                                  <li><a href="about-us.html">About Us</a></li>
-                                  <li><a href="our-services.html">Our Services</a></li>
-                                  <li><a href="contact-us.html">Contact Us</a></li>
-                              </ul>
-                          </li> -->
-                          <li class="scroll-to-section"><a href="#simple-cta-section">Offers</a></li>
-                          <!-- <li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li>  -->
-                          <li class="scroll-to-section"><a href="#contact-section">Contact Us</a></li> 
-                      </ul>        
-                      <a class='menu-trigger'>
-                          <span>Menu</span>
-                      </a>
-                      <!-- ***** Menu End ***** -->
-                  </nav>
-              </div>
-          </div>
-      </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-
-  <!-- ***** Main Banner Area Start ***** -->
-  <section class="main-banner" id="top">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 align-self-center">
-          <div class="header-text">
-            <h6>Welcome</h6>
-            <h2>Simplify Your <em>Notary</em> Needs.!!!</h2>
-            <div class="main-button-gradient">
-              <div class="scroll-to-section"><a href="#contact-section">Contact Us Now</a></div>
-            </div>
-          </div>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo">
+        <div style="width:34px;height:34px;border-radius:10px;background:#6c5ce7;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <i class="fa-solid fa-stamp" style="color:#fff;font-size:16px"></i>
         </div>
-        <div class="col-lg-6">
-          <div class="right-image">
-            <img src="assets/images/banner-right-image_viraj_1.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 align-self-center">
-        </div>
-        <div class="col-lg-6">
-          <div class="right-name-title">
-            <h4>Viraj Jain</h4>
-            <h4><em>Notary</em> Public, CA</h4>
-          </div>
-        </div>
-      </div>
+        <span class="logo-text">WeSign<span class="logo-accent">ForYou</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Get in Touch</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </section>
-  <!-- ***** Main Banner Area End ***** -->
+  </nav>
 
-  <section class="services" id="services">
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#offers">Offers</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Page Dots -->
+  <div class="page-dots" id="pageDots">
+    <div class="dot active" data-target="home"></div>
+    <div class="dot" data-target="services"></div>
+    <div class="dot" data-target="reviews"></div>
+    <div class="dot" data-target="offers"></div>
+    <div class="dot" data-target="faq"></div>
+    <div class="dot" data-target="contact"></div>
+  </div>
+
+  <!-- Hero -->
+  <section class="page hero" id="home">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h6>Our Services</h6>
-            <h4>Provided <em>Services</em></h4>
+      <div class="reveal">
+        <div class="badge"><i class="fa-solid fa-circle"></i> Trusted Notary Public in California</div>
+      </div>
+      <h1 class="reveal">Simplify Your <em>Notary</em> Needs</h1>
+      <p class="hero-sub reveal">Backed by years of professional service, we provide 24/7 mobile notary services across Milpitas and the Bay Area. We come to you.</p>
+      <div class="hero-buttons reveal">
+        <a href="#contact" class="btn btn-dark"><i class="fa-solid fa-paper-plane"></i> Contact Us Now</a>
+        <a href="#services" class="btn btn-outline"><i class="fa-solid fa-arrow-down"></i> Explore Services</a>
+      </div>
+      <div class="hero-bento reveal">
+        <div class="hero-card hero-card-portrait">
+          <img src="assets/images/viraj.JPG" alt="Viraj Jain - Notary Public">
+          <div class="card-label">
+            <h4>Your Trusted Notary</h4>
+            <p>Professional mobile notary services across the Bay Area</p>
           </div>
         </div>
-        <div class="col-lg-12">
-          <div class="owl-service-item owl-carousel">
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-mobile-notary.png" alt="">
+        <div class="hero-card hero-card-info">
+          <div class="hero-card-info-top">
+            <ul class="info-list">
+              <li>
+                <div class="info-list-avatar"><img src="assets/images/viraj.JPG" alt="Viraj"></div>
+                <div class="info-list-text"><h4>Viraj Jain</h4><p>Notary Public, CA</p></div>
+                <span class="info-list-badge">24/7</span>
+              </li>
+              <li>
+                <div class="info-list-avatar" style="background:var(--bg-cream);display:flex;align-items:center;justify-content:center">
+                  <i class="fa-solid fa-car-side" style="color:var(--accent);font-size:.9rem"></i>
                 </div>
-                <h4>Mobile Notary</h4>
-                <p>Just give us a call and we will come to you, providing 24-hour mobile notary services in and around Milpitas and surrounding bay area (Fremont, Newark, Santa Clara, San Jose, Sunnyvale).</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-ack.png" alt="">
+                <div class="info-list-text"><h4>Mobile Service</h4><p>We come to you</p></div>
+                <span class="info-list-badge">Bay Area</span>
+              </li>
+              <li>
+                <div class="info-list-avatar" style="background:var(--bg-cream);display:flex;align-items:center;justify-content:center">
+                  <i class="fa-solid fa-star" style="color:#f59e0b;font-size:.9rem"></i>
                 </div>
-                <h4>Acknowledgements</h4>
-                <p>The purpose of an acknowledgment is for a signer, whose identity has been verified, to declare to a Notary Pulic that he or she has willingly signed a document. Notary administered acknowledgements verify the identity of the signer, and validate that the document was signed willingly. </p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-jurat.png" alt="">
-                </div>
-                <h4>Oaths & Jurats</h4>
-                <p>The purpose of a jurat — also known in some states as a “verification upon oath or affirmation” — is for a signer to swear to or affirm the truthfulness of the contents of a document to a Notary Public.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-copy.png" alt="">
-                </div>
-                <h4>Certified Copies</h4>
-                <p>A certified copy is a copy of an original document, comes along with a certificate which denotes that its a true and legitimate copy of the primary document. Certified copies are often requested for Power of Attorney.
-                  </p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-poa.png" alt="">
-                </div>
-                <h4>Power of Attorney</h4>
-                <p>A valid Power of Attorney is an essential part of your life essential documents. Regardless of age, it is highly recommended to have these forms completed and notarized.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="service-item">
-                <div class="icon">
-                  <img src="assets/images/service-icon-will.png" alt="">
-                </div>
-                <h4>Trust & Last Will</h4>
-                <p>Regardless of whether an attorney has prepared your estate planning documents, or they were self-prepared, they must be notarized. Signing in the presence of a licensed notary public deters any and all fraudulence and malpractice.</p>
-              </div>
-            </div>
-            </div>
+                <div class="info-list-text"><h4>5-Star Rated</h4><p>Google Reviews</p></div>
+                <span class="info-list-badge">100%</span>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-card-info-bottom">
+            <h4>Notary meets efficiency</h4>
+            <p>Streamline your notarization process with professional services delivered at your doorstep.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- <section class="our-courses" id="courses">
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="container trust-inner">
+      <div class="trust-item reveal"><div class="number">24/7</div><div class="label">Availability</div></div>
+      <div class="trust-item reveal reveal-delay-1"><div class="number">Bay Area</div><div class="label">Service Coverage</div></div>
+      <div class="trust-item reveal reveal-delay-2"><div class="number">100%</div><div class="label">Client Satisfaction</div></div>
+      <div class="trust-item reveal reveal-delay-3"><div class="number">Mobile</div><div class="label">We Come To You</div></div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="page services-section" id="services">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h6>OUR COURSES</h6>
-            <h4>What You Can <em>Learn</em></h4>
-            <p>You just think about TemplateMo whenever you need free CSS templates for your business website</p>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="naccs">
-            <div class="tabs">
-              <div class="row">
-                <div class="col-lg-3">
-                  <div class="menu">
-                    <div class="active gradient-border"><span>Web Development</span></div>
-                    <div class="gradient-border"><span>Graphic Design</span></div>
-                    <div class="gradient-border"><span>Web Design</span></div>
-                    <div class="gradient-border"><span>WordPress</span></div>
-                  </div>
-                </div>
-                <div class="col-lg-9">
-                  <ul class="nacc">
-                    <li class="active">
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/courses-01.jpg" alt="">
-                          <div class="price"><h6>$128</h6></div>
-                        </div>
-                        <div class="right-content">
-                          <h4>Web Development</h4>
-                          <p>Did you know that you can visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS website</a> for latest listing of HTML templates and a variety of useful templates. 
-                          <br><br>You just need to go and visit that website right now. IF you have any suggestion or comment about this template, you can feel free to go to contact page for our email address.</p>
-                          <span>36 Hours</span>
-                          <span>4 Weeks</span>
-                          <span class="last-span">3 Certificates</span>
-                          <div class="text-button">
-                            <a href="contact-us.html">Subscribe Course</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/courses-02.jpg" alt="">
-                          <div class="price"><h6>$156</h6></div>
-                        </div>
-                        <div class="right-content">
-                          <h4>Creative Graphic Design</h4>
-                          <p>You are not allowed to redistribute this template ZIP file on any other website without a permission from us.<br><br>There are some unethical people on this world copied and reposted our templates without any permission from us. Their Karma will hit them really hard. Yeah!</p>
-                          <span>48 Hours</span>
-                          <span>6 Weeks</span>
-                          <span class="last-span">1 Certificate</span>
-                          <div class="text-button">
-                            <a href="contact-us.html">Subscribe Course</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/courses-03.jpg" alt="">
-                          <div class="price"><h6>$184</h6></div>
-                        </div>
-                        <div class="right-content">
-                          <h4>Web Design</h4>
-                          <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan.<br><br>Kogi VHS freegan bicycle rights try-hard green juice probably haven't heard of them cliche la croix af chillwave.</p>
-                          <span>28 Hours</span>
-                          <span>4 Weeks</span>
-                          <span class="last-span">1 Certificate</span>
-                          <div class="text-button">
-                            <a href="contact-us.html">Subscribe Course</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/courses-04.jpg" alt="">
-                          <div class="price"><h6>$76</h6></div>
-                        </div>
-                        <div class="right-content">
-                          <h4>WordPress Introduction</h4>
-                          <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan.<br><br>Kogi VHS freegan bicycle rights try-hard green juice probably haven't heard of them cliche la croix af chillwave.</p>
-                          <span>48 Hours</span>
-                          <span>4 Weeks</span>
-                          <span class="last-span">2 Certificates</span>
-                          <div class="text-button">
-                            <a href="contact-us.html">Subscribe Course</a>
-                          </div>
-                        </div>
-                      </div>
-                      </li>
-                    </ul>
-                </div>
-              </div>
+      <div class="section-header">
+        <div class="badge reveal"><i class="fa-solid fa-circle"></i> Our Services</div>
+        <h2 class="reveal">Efficiency, Engineered for <em>Results</em></h2>
+        <p class="reveal">Professional notary services tailored to your needs, delivered at your convenience.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal"><div class="service-card-icon"><i class="fa-solid fa-car-side"></i></div><h3>Mobile Notary</h3><p>Just give us a call and we will come to you, providing 24-hour mobile notary services in and around Milpitas and surrounding bay area (Fremont, Newark, Santa Clara, San Jose, Sunnyvale).</p></div>
+        <div class="service-card reveal reveal-delay-1"><div class="service-card-icon"><i class="fa-solid fa-file-signature"></i></div><h3>Acknowledgements</h3><p>The purpose of an acknowledgment is for a signer, whose identity has been verified, to declare to a Notary Public that he or she has willingly signed a document. Notary administered acknowledgements verify the identity of the signer, and validate that the document was signed willingly.</p></div>
+        <div class="service-card reveal reveal-delay-2"><div class="service-card-icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>Oaths &amp; Jurats</h3><p>The purpose of a jurat — also known in some states as a "verification upon oath or affirmation" — is for a signer to swear to or affirm the truthfulness of the contents of a document to a Notary Public.</p></div>
+        <div class="service-card reveal reveal-delay-3"><div class="service-card-icon"><i class="fa-solid fa-copy"></i></div><h3>Certified Copies</h3><p>A certified copy is a copy of an original document, comes along with a certificate which denotes that its a true and legitimate copy of the primary document. Certified copies are often requested for Power of Attorney.</p></div>
+        <div class="service-card reveal reveal-delay-4"><div class="service-card-icon"><i class="fa-solid fa-gavel"></i></div><h3>Power of Attorney</h3><p>A valid Power of Attorney is an essential part of your life essential documents. Regardless of age, it is highly recommended to have these forms completed and notarized.</p></div>
+        <div class="service-card reveal reveal-delay-5"><div class="service-card-icon"><i class="fa-solid fa-scroll"></i></div><h3>Trust &amp; Last Will</h3><p>Regardless of whether an attorney has prepared your estate planning documents, or they were self-prepared, they must be notarized. Signing in the presence of a licensed notary public deters any and all fraudulence and malpractice.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Carousel -->
+  <section class="testimonials-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="reveal">What Our Clients <em>Think</em></h2>
+      </div>
+      <div class="carousel-wrapper reveal">
+        <button class="carousel-arrow carousel-arrow-left" aria-label="Previous review"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="carousel-arrow carousel-arrow-right" aria-label="Next review"><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="carousel-track">
+          <div class="carousel-slides" id="carouselSlides">
+            <div class="carousel-slide">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="quote-text">Professional, Quick, and Truly Patient. This was easily the best experience we've ever had with signing important paperwork. She was incredibly quick and thorough, handling all the verification steps with impressive speed and efficiency. She was so understanding when our 8-month-old got fussy right in the middle of things!</p>
+              <div class="quote-author"><div class="quote-avatar-initials">RU</div><div class="quote-info"><h4>Rohit Upadhyay</h4><p>Google Review</p></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="quote-text">I recently used Viraj Jain for notary services for my passport renewal documents, and I couldn't be more satisfied. The process was quick, smooth, and hassle-free. She was very professional, efficient, and made the entire experience easy and convenient. The pricing was very reasonable.</p>
+              <div class="quote-author"><div class="quote-avatar-initials">RN</div><div class="quote-info"><h4>Rahul R. Nair</h4><p>Google Review</p></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="quote-text">I had an excellent experience with WeSignForYou Notary Services. Viraj Jain was incredibly professional, punctual, and made the entire process seamless from start to finish. Highly recommend Viraj for anyone looking for a smooth and efficient notary experience!</p>
+              <div class="quote-author"><div class="quote-avatar-initials">MP</div><div class="quote-info"><h4>Mayank Pahadia</h4><p>Google Review</p></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="quote-text">Excellent service. Needed to send a power of attorney to my mom. I needed two witness signatures. Viraj came home on a Sunday and made the process super convenient for all of us. Efficient, thorough and knowledgeable. Thank you very much, Viraj.</p>
+              <div class="quote-author"><div class="quote-avatar-initials">BG</div><div class="quote-info"><h4>Bhakti Ghanekar</h4><p>Google Review</p></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="quote-text">I recently used the notary services of Viraj and was thoroughly impressed. The service was incredibly efficient and offered at a very reasonable price. She was professional and always available when needed. Highly recommend!</p>
+              <div class="quote-author"><div class="quote-avatar-initials">SS</div><div class="quote-info"><h4>Shweta Sharma</h4><p>Google Review</p></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="quote-text">I recently contacted Viraj for Notary Service and was thoroughly impressed with their professionalism and efficiency. They were very knowledgeable, courteous, and made the notarization process seamless. They always responded quickly to my texts and were very humble.</p>
+              <div class="quote-author"><div class="quote-avatar-initials">TV</div><div class="quote-info"><h4>Teja Vojjala</h4><p>Google Review</p></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="quote-text">My overall experience was outstanding. Her attention to detail, professionalism, and exceptional customer service surpassed my expectations. I highly recommend her notary services to anyone in need of reliable and efficient notarizations.</p>
+              <div class="quote-author"><div class="quote-avatar-initials">SS</div><div class="quote-info"><h4>Sarthak Swain</h4><p>Google Review</p></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="quote-text">I recently used WeSignForYou notary service for document signing, and I was incredibly impressed. The notary was professional, efficient, and made sure I understood every detail before signing. The process was seamless and quick. Five stars!</p>
+              <div class="quote-author"><div class="quote-avatar-initials">DV</div><div class="quote-info"><h4>Divesh Verma</h4><p>Google Review</p></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="quote-text">I recently had an affidavit notarized here and was impressed with their professionalism and efficiency. The team explained the process clearly and was extremely thorough. Highly recommended for all legal documentation needs!</p>
+              <div class="quote-author"><div class="quote-avatar-initials">EG</div><div class="quote-info"><h4>Ermias Girma Leggesse</h4><p>Google Review</p></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="quote-text">She was accommodating, efficient and pleasant to work with. Was able to get an appointment according to my convenience and was super quick!</p>
+              <div class="quote-author"><div class="quote-avatar-initials">IZ</div><div class="quote-info"><h4>Ifrah Zaki</h4><p>Google Review</p></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="quote-text">Extremely easy to work with and very cost effective and efficient!</p>
+              <div class="quote-author"><div class="quote-avatar-initials">CP</div><div class="quote-info"><h4>Chetan Popat</h4><p>Google Review</p></div></div>
+            </div>
+            <div class="carousel-slide">
+              <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p class="quote-text">I called and she was able to see me right away. Very friendly, clear instructions while giving directions, efficient and fast service. Thank you!</p>
+              <div class="quote-author"><div class="quote-avatar-initials">AD</div><div class="quote-info"><h4>Amaris Diaz</h4><p>Google Review</p></div></div>
             </div>
           </div>
         </div>
+        <div class="carousel-dots" id="carouselDots"></div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <section class="simple-cta" id="simple-cta-section">
+  <!-- Offers -->
+  <section class="page offers-section" id="offers">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5 offset-lg-1">
-          <div class="left-image">
-            <img src="assets/images/cta-left-image_1.png" alt="">
+      <div class="section-header">
+        <div class="badge reveal"><i class="fa-solid fa-circle"></i> Special Offer</div>
+        <h2 class="reveal">Save More Over Time, <em>Don't Miss It</em></h2>
+      </div>
+      <div class="offers-card reveal">
+        <div class="offers-image"><img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=600&fit=crop" alt="Family signing documents"></div>
+        <div class="offers-content">
+          <div class="badge"><i class="fa-solid fa-tag"></i> Family Plan</div>
+          <h2>Up to 40% OFF Family Plan*</h2>
+          <div class="stat-row">
+            <div class="stat-item"><div class="stat-number">40%</div><div class="stat-label">Max Discount</div></div>
+            <div class="stat-item"><div class="stat-number">10%</div><div class="stat-label">Per Milestone</div></div>
+            <div class="stat-item"><div class="stat-number">6 mo</div><div class="stat-label">Window</div></div>
           </div>
-        </div>
-        <div class="col-lg-5 align-self-center">
-          <h6>Save more over time, don't miss it!!</h6>
-          <h4>Up to 40% OFF family plan*</h4>
           <p>* Within 6 months window, keep adding 10% DISCOUNT (upto 40%) after every 5 notarization for your whole family.</p>
-          <div class="white-button">
-            <a href="#contact-section">Contact Us Now</a>
-          </div>
+          <a href="#contact" class="btn btn-dark"><i class="fa-solid fa-paper-plane"></i> Contact Us Now</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- <section class="testimonials" id="testimonials">
+  <!-- FAQ -->
+  <section class="page faq-section" id="faq">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h6>Testimonials</h6>
-            <h4>What They <em>Think</em></h4>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
-            <div class="item">
-              <p>“just think about TemplateMo if you need free CSS templates for your website”</p>
-                <h4>Catherine Walk</h4>
-                <span>CEO &amp; Founder</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“think about our website first when you need free HTML templates for your website”</p>
-                <h4>David Martin</h4>
-                <span>CTO of Tech Company</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“just think about our website wherever you need free templates for your website”</p>
-                <h4>Sophia Whity</h4>
-                <span>CEO and Co-Founder</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                <h4>Helen Shiny</h4>
-                <span>Tech Officer</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                <h4>George Soft</h4>
-                <span>Gadget Reviewer</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                <h4>Andrew Hall</h4>
-                <span>Marketing Manager</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                <h4>Maxi Power</h4>
-                <span>Fashion Designer</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                <h4>Olivia Too</h4>
-                <span>Creative Designer</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-          </div>
-        </div>
+      <div class="section-header">
+        <div class="badge reveal"><i class="fa-solid fa-circle"></i> FAQs</div>
+        <h2 class="reveal">Frequently Asked <em>Questions</em></h2>
+        <p class="reveal">Everything you need to know about our notary services.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal"><button class="faq-question">What areas do you serve? <i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>We provide mobile notary services in and around Milpitas and the surrounding Bay Area, including Fremont, Newark, Santa Clara, San Jose, and Sunnyvale. We come directly to your location.</p></div></div>
+        <div class="faq-item reveal reveal-delay-1"><button class="faq-question">Are you available on weekends and holidays? <i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Yes, we offer 24-hour mobile notary services, including weekends and holidays. Just give us a call and we'll schedule a time that works for you.</p></div></div>
+        <div class="faq-item reveal reveal-delay-2"><button class="faq-question">What documents can you notarize? <i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>We handle acknowledgements, oaths and jurats, certified copies, power of attorney, trusts, last wills, and more. Contact us if you have a specific document in mind.</p></div></div>
+        <div class="faq-item reveal reveal-delay-3"><button class="faq-question">How does the family discount plan work? <i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Within a 6-month window, you keep adding 10% discount (up to 40%) after every 5 notarizations for your whole family. The more you use our services, the more you save.</p></div></div>
+        <div class="faq-item reveal reveal-delay-4"><button class="faq-question">What do I need to bring for a notarization? <i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>You'll need a valid, government-issued photo ID (driver's license or passport), the document(s) to be notarized, and all signers must be present at the time of notarization.</p></div></div>
       </div>
     </div>
-  </section> -->
+  </section>
 
-  <section class="contact-us" id="contact-section">
+  <!-- Contact -->
+  <section class="page contact-section" id="contact">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div id="map">
-          
-            <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.7420389673443!2d-121.90538289999999!3d37.4195717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc91012f2f03b%3A0xbd08ce7d564e83f5!2sWeSignForYou%20Notary%20Services!5e0!3m2!1sen!2sus!4v1753376732455!5m2!1sen!2sus" width="100%" height="420px" frameborder="0" style="border:0; border-radius: 15px; position: relative; z-index: 2;" allowfullscreen=""></iframe>
-            <div class="row">
-              <div class="col-lg-4 offset-lg-1">
-                <div class="contact-info">
-                  <div class="icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <h4>Mobile</h4>
-                  <span><a href="tel:4089019281">+1 (408)-901-9281</a></span>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="contact-info">
-                  <div class="icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <h4>Alt. Mobile</h4>
-                  <span><a href="tel:6692138910">+1 (669)-213-8910</a></span>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-8 offset-lg-1">
-                <div class="contact-info">
-                  <div class="icon">
-                    <i class="fa fa-home"></i>
-                  </div>
-                  <h4>Address</h4>
-                  <span><a href="https://maps.app.goo.gl/gHUES7SrdYXe8Nfy6" target="_blank">800 S Able St, Milpitas, CA, 95035</a></span>
-                </div>
-              </div>
-            </div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="badge reveal"><i class="fa-solid fa-circle"></i> Get In Touch</div>
+          <h2 class="reveal">Stay Ahead. <em>Reach Out.</em></h2>
+          <p class="reveal">Have a document that needs notarizing? Write us your feedback or query and our team will reach out to you shortly.</p>
+          <div class="map-wrap reveal">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.7420389673443!2d-121.90538289999999!3d37.4195717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc91012f2f03b%3A0xbd08ce7d564e83f5!2sWeSignForYou%20Notary%20Services!5e0!3m2!1sen!2sus!4v1753376732455!5m2!1sen!2sus" allowfullscreen="" loading="lazy" title="WeSignForYou location"></iframe>
+          </div>
+          <div class="info-cards reveal">
+            <div class="info-card"><div class="info-card-icon"><i class="fa-solid fa-phone"></i></div><div><h4>Mobile</h4><a href="tel:4089019281">+1 (408)-901-9281</a></div></div>
+            <div class="info-card"><div class="info-card-icon"><i class="fa-solid fa-phone"></i></div><div><h4>Alt. Mobile</h4><a href="tel:6692138910">+1 (669)-213-8910</a></div></div>
+            <div class="info-card full"><div class="info-card-icon"><i class="fa-solid fa-location-dot"></i></div><div><h4>Address</h4><a href="https://maps.app.goo.gl/gHUES7SrdYXe8Nfy6" target="_blank" rel="noopener">800 S Able St, Milpitas, CA, 95035</a></div></div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <form id="contact" action="https://formspree.io/f/xjvdybrb" method="post">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="section-heading">
-                  <h6>Contact us</h6>
-                  <h4>Say <em>Hello</em></h4>
-                  <p>Write us your feedback/query and our team will reach out to you shortly.</p>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="main-gradient-button">Send Message</button>
-                </fieldset>
-              </div>
-            </div>
+        <div class="contact-form reveal">
+          <h3>Say Hello</h3>
+          <p>Write us your feedback/query and our team will reach out to you shortly.</p>
+          <form action="https://formspree.io/f/xjvdybrb" method="post">
+            <div class="form-group"><input type="text" name="name" placeholder="Full Name" autocomplete="name" required aria-label="Full Name"></div>
+            <div class="form-group"><input type="email" name="email" placeholder="Your Email" required aria-label="Email"></div>
+            <div class="form-group"><textarea name="message" placeholder="Your Message" aria-label="Message"></textarea></div>
+            <button type="submit" class="form-submit">Send Message <i class="fa-solid fa-arrow-right"></i></button>
           </form>
         </div>
-        <div class="col-lg-12">
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-            <li><a href="https://www.yelp.com/biz/wesignforyou-notary-milpitas" target="_blank"><i class="fa fa-yelp"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-lg-12">
-          <p class="copyright">Copyright © 2025 WeSignForYou, Ltd. All Rights Reserved. 
-          
-          <!-- <br>Design: <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p> -->
-        </div>
       </div>
     </div>
   </section>
 
-  <a href="tel:+14089019281" class="social-icons float pulsate-fwd"> <i class="fa fa-phone"></i> </a>
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="badge reveal" style="border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.7);background:rgba(255,255,255,.05)">
+        <i class="fa-solid fa-circle" style="color:var(--accent-light)"></i> Ready to Get Started?
+      </div>
+      <h2 class="reveal">Stay Ahead. Get Notarized.</h2>
+      <p class="reveal">Professional mobile notary services at your doorstep. Available 24/7 across the Bay Area.</p>
+      <div class="reveal"><a href="tel:4089019281" class="btn btn-accent"><i class="fa-solid fa-phone"></i> Call Now: (408)-901-9281</a></div>
+    </div>
+  </section>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <p>Copyright &copy; 2025 WeSignForYou, Ltd. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.yelp.com/biz/wesignforyou-notary-milpitas" target="_blank" rel="noopener" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/video.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-        //according to loftblog tut
-        $('.nav li:first').addClass('active');
+  <!-- Floating Buttons -->
+  <a href="tel:+14089019281" class="float-call" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
+  <a href="https://maps.app.goo.gl/gHUES7SrdYXe8Nfy6" target="_blank" rel="noopener" class="float-map" aria-label="Open in Google Maps"><i class="fa-solid fa-location-dot"></i></a>
 
-        var showSection = function showSection(section, isAnimate) {
-          var
-          direction = section.replace(/#/, ''),
-          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-          reqSectionPos = reqSection.offset().top - 0;
-
-          if (isAnimate) {
-            $('body, html').animate({
-              scrollTop: reqSectionPos },
-            800);
-          } else {
-            $('body, html').scrollTop(reqSectionPos);
-          }
-
-        };
-
-        var checkSection = function checkSection() {
-          $('.section').each(function () {
-            var
-            $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-            if (topEdge < wScroll && bottomEdge > wScroll) {
-              var
-              currentId = $this.data('section'),
-              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-              reqLink.closest('li').addClass('active').
-              siblings().removeClass('active');
-            }
-          });
-        };
-
-        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
-          e.preventDefault();
-          showSection($(this).attr('href'), true);
-        });
-
-        $(window).scroll(function () {
-          checkSection();
-        });
-    </script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
