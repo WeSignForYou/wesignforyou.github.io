@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- class="snap" enables full-page scroll snapping; only the homepage uses it -->
+<html lang="en" class="snap">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="WeSignForYou - Professional Mobile Notary Services in Milpitas & Bay Area. Available 24/7.">
-  <title>WeSignForYou Notary Services</title>
+  <meta name="description" content="WeSignForYou - Professional Notary & Apostille Services in Milpitas & the Bay Area. Available 24/7, with mobile service if you need us to come to you. Full California Secretary of State apostille handling.">
+  <title>WeSignForYou | Notary &amp; Apostille Services in Milpitas &amp; the Bay Area</title>
+  <link rel="canonical" href="https://www.wesignforyou.com/">
+  <meta name="theme-color" content="#6c5ce7">
+
+  <!-- Social share preview (WhatsApp, iMessage, Facebook, LinkedIn, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WeSignForYou">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="WeSignForYou | Notary &amp; Apostille Services">
+  <meta property="og:description" content="Professional notary and apostille services in Milpitas and the Bay Area. Available 24/7, with mobile service if you need us to come to you.">
+  <meta property="og:url" content="https://www.wesignforyou.com/">
+  <meta property="og:image" content="https://www.wesignforyou.com/assets/images/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="769">
+  <meta property="og:image:height" content="407">
+  <meta property="og:image:alt" content="WeSignForYou — Notary and Apostille Services, Milpitas and the Bay Area">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <!-- Warm up the third-party origins before the stylesheets request from them -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -23,10 +47,9 @@
       </a>
       <ul class="nav-links">
         <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="notary/index.html">Notary</a></li>
+        <li><a href="apostille/index.html">Apostille</a></li>
         <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#offers">Offers</a></li>
-        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <a href="#contact" class="nav-cta">Get in Touch</a>
@@ -39,30 +62,27 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
     <a href="#home">Home</a>
-    <a href="#services">Services</a>
+    <a href="notary/index.html">Notary</a>
+    <a href="apostille/index.html">Apostille</a>
     <a href="#reviews">Reviews</a>
-    <a href="#offers">Offers</a>
-    <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
   </div>
 
   <!-- Page Dots -->
-  <div class="page-dots" id="pageDots">
-    <div class="dot active" data-target="home"></div>
-    <div class="dot" data-target="services"></div>
-    <div class="dot" data-target="reviews"></div>
-    <div class="dot" data-target="offers"></div>
-    <div class="dot" data-target="faq"></div>
-    <div class="dot" data-target="contact"></div>
-  </div>
+  <nav class="page-dots" id="pageDots" aria-label="Jump to section">
+    <button type="button" class="dot active" data-target="home" aria-label="Home"></button>
+    <button type="button" class="dot" data-target="services" aria-label="Services"></button>
+    <button type="button" class="dot" data-target="reviews" aria-label="Reviews"></button>
+    <button type="button" class="dot" data-target="contact" aria-label="Contact"></button>
+  </nav>
 
   <!-- Hero -->
   <section class="page hero" id="home">
     <div class="container">
       <div class="reveal">
-        <div class="badge"><i class="fa-solid fa-circle"></i> Trusted Notary Public in California</div>
+        <div class="badge"><i class="fa-solid fa-circle"></i> Trusted Notary Public &amp; Apostille Services in California</div>
       </div>
-      <h1 class="reveal">Simplify Your <em>Notary</em> Needs</h1>
+      <h1 class="reveal">Simplify Your <em>Notary</em> &amp; <em>Apostille</em> Needs</h1>
       <p class="hero-sub reveal">Backed by years of professional service, we provide 24/7 mobile notary services across Milpitas and the Bay Area. We come to you.</p>
       <div class="hero-buttons reveal">
         <a href="#contact" class="btn btn-dark"><i class="fa-solid fa-paper-plane"></i> Contact Us Now</a>
@@ -70,7 +90,10 @@
       </div>
       <div class="hero-bento reveal">
         <div class="hero-card hero-card-portrait">
-          <img src="assets/images/viraj.JPG" alt="Viraj Jain - Notary Public">
+          <picture>
+            <source srcset="assets/images/viraj-portrait.webp" type="image/webp">
+            <img src="assets/images/viraj-portrait.jpg" alt="Viraj Jain - Notary Public" width="940" height="1158" fetchpriority="high" decoding="async">
+          </picture>
           <div class="card-label">
             <h4>Your Trusted Notary</h4>
             <p>Professional mobile notary services across the Bay Area</p>
@@ -80,7 +103,12 @@
           <div class="hero-card-info-top">
             <ul class="info-list">
               <li>
-                <div class="info-list-avatar"><img src="assets/images/viraj.JPG" alt="Viraj"></div>
+                <div class="info-list-avatar">
+                  <picture>
+                    <source srcset="assets/images/viraj-avatar.webp" type="image/webp">
+                    <img src="assets/images/viraj-avatar.jpg" alt="Viraj" width="80" height="80" decoding="async">
+                  </picture>
+                </div>
                 <div class="info-list-text"><h4>Viraj Jain</h4><p>Notary Public, CA</p></div>
                 <span class="info-list-badge">24/7</span>
               </li>
@@ -91,18 +119,20 @@
                 <div class="info-list-text"><h4>Mobile Service</h4><p>We come to you</p></div>
                 <span class="info-list-badge">Bay Area</span>
               </li>
-              <li>
-                <div class="info-list-avatar" style="background:var(--bg-cream);display:flex;align-items:center;justify-content:center">
-                  <i class="fa-solid fa-star" style="color:#f59e0b;font-size:.9rem"></i>
-                </div>
-                <div class="info-list-text"><h4>5-Star Rated</h4><p>Google Reviews</p></div>
-                <span class="info-list-badge">100%</span>
+              <li class="has-link">
+                <a class="info-list-link" href="https://www.google.com/maps?cid=13621364110696285173" target="_blank" rel="noopener" aria-label="Read our reviews on Google">
+                  <div class="info-list-avatar" style="background:var(--bg-cream);display:flex;align-items:center;justify-content:center">
+                    <i class="fa-solid fa-star" style="color:#f59e0b;font-size:.9rem"></i>
+                  </div>
+                  <div class="info-list-text"><h4>5-Star Rated</h4><p>Google Reviews</p></div>
+                  <span class="info-list-badge">100%</span>
+                </a>
               </li>
             </ul>
           </div>
           <div class="hero-card-info-bottom">
-            <h4>Notary meets efficiency</h4>
-            <p>Streamline your notarization process with professional services delivered at your doorstep.</p>
+            <h4>Notary &amp; apostille, handled</h4>
+            <p>Notarization at your doorstep, plus full apostille processing with the California Secretary of State.</p>
           </div>
         </div>
       </div>
@@ -124,16 +154,37 @@
     <div class="container">
       <div class="section-header">
         <div class="badge reveal"><i class="fa-solid fa-circle"></i> Our Services</div>
-        <h2 class="reveal">Efficiency, Engineered for <em>Results</em></h2>
-        <p class="reveal">Professional notary services tailored to your needs, delivered at your convenience.</p>
+        <h2 class="reveal">How Can We <em>Help?</em></h2>
+        <p class="reveal">Notarization, apostille, or both. Not sure what your situation calls for? Give us a call and we'll talk it through.</p>
       </div>
-      <div class="services-grid">
-        <div class="service-card reveal"><div class="service-card-icon"><i class="fa-solid fa-car-side"></i></div><h3>Mobile Notary</h3><p>Just give us a call and we will come to you, providing 24-hour mobile notary services in and around Milpitas and surrounding bay area (Fremont, Newark, Santa Clara, San Jose, Sunnyvale).</p></div>
-        <div class="service-card reveal reveal-delay-1"><div class="service-card-icon"><i class="fa-solid fa-file-signature"></i></div><h3>Acknowledgements</h3><p>The purpose of an acknowledgment is for a signer, whose identity has been verified, to declare to a Notary Public that he or she has willingly signed a document. Notary administered acknowledgements verify the identity of the signer, and validate that the document was signed willingly.</p></div>
-        <div class="service-card reveal reveal-delay-2"><div class="service-card-icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>Oaths &amp; Jurats</h3><p>The purpose of a jurat — also known in some states as a "verification upon oath or affirmation" — is for a signer to swear to or affirm the truthfulness of the contents of a document to a Notary Public.</p></div>
-        <div class="service-card reveal reveal-delay-3"><div class="service-card-icon"><i class="fa-solid fa-copy"></i></div><h3>Certified Copies</h3><p>A certified copy is a copy of an original document, comes along with a certificate which denotes that its a true and legitimate copy of the primary document. Certified copies are often requested for Power of Attorney.</p></div>
-        <div class="service-card reveal reveal-delay-4"><div class="service-card-icon"><i class="fa-solid fa-gavel"></i></div><h3>Power of Attorney</h3><p>A valid Power of Attorney is an essential part of your life essential documents. Regardless of age, it is highly recommended to have these forms completed and notarized.</p></div>
-        <div class="service-card reveal reveal-delay-5"><div class="service-card-icon"><i class="fa-solid fa-scroll"></i></div><h3>Trust &amp; Last Will</h3><p>Regardless of whether an attorney has prepared your estate planning documents, or they were self-prepared, they must be notarized. Signing in the presence of a licensed notary public deters any and all fraudulence and malpractice.</p></div>
+      <div class="chooser-grid">
+        <div class="chooser-card reveal">
+          <div class="chooser-card-icon"><i class="fa-solid fa-stamp"></i></div>
+          <h3>Notary Services</h3>
+          <p>Notary Public services for personal, legal and business documents. Available 24/7, and we can come to you anywhere in the Bay Area.</p>
+          <ul class="chooser-list">
+            <li><i class="fa-solid fa-check"></i> Mobile notary — we come to you</li>
+            <li><i class="fa-solid fa-check"></i> Acknowledgements, oaths &amp; jurats</li>
+            <li><i class="fa-solid fa-check"></i> Power of attorney &amp; certified copies</li>
+            <li><i class="fa-solid fa-check"></i> Trusts &amp; last wills</li>
+            <li><i class="fa-solid fa-check"></i> Passport renewal &amp; OCI application documents</li>
+            <li class="chooser-more"><i class="fa-solid fa-ellipsis"></i> and many more</li>
+          </ul>
+          <a href="notary/index.html" class="btn btn-dark">View Notary Services <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="chooser-card reveal reveal-delay-1">
+          <div class="chooser-card-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Apostille Services</h3>
+          <p>An apostille is a certificate that authenticates the signature of a public official on your document — a County Clerk, County Recorder, Notary Public or the State Registrar, for example — so that it can be used in another country.</p>
+          <ul class="chooser-list">
+            <li><i class="fa-solid fa-check"></i> Vital records (like birth, death &amp; marriage certificates)</li>
+            <li><i class="fa-solid fa-check"></i> Educational records (like diplomas &amp; transcripts)</li>
+            <li><i class="fa-solid fa-check"></i> Court, corporate &amp; business documents</li>
+            <li><i class="fa-solid fa-check"></i> Notarized documents &amp; sworn statements</li>
+            <li class="chooser-more"><i class="fa-solid fa-ellipsis"></i> and many more</li>
+          </ul>
+          <a href="apostille/index.html" class="btn btn-dark">View Apostille Services <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
       </div>
     </div>
   </section>
@@ -213,47 +264,17 @@
         </div>
         <div class="carousel-dots" id="carouselDots"></div>
       </div>
-    </div>
-  </section>
-
-  <!-- Offers -->
-  <section class="page offers-section" id="offers">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge reveal"><i class="fa-solid fa-circle"></i> Special Offer</div>
-        <h2 class="reveal">Save More Over Time, <em>Don't Miss It</em></h2>
-      </div>
-      <div class="offers-card reveal">
-        <div class="offers-image"><img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=600&fit=crop" alt="Family signing documents"></div>
-        <div class="offers-content">
-          <div class="badge"><i class="fa-solid fa-tag"></i> Family Plan</div>
-          <h2>Up to 40% OFF Family Plan*</h2>
-          <div class="stat-row">
-            <div class="stat-item"><div class="stat-number">40%</div><div class="stat-label">Max Discount</div></div>
-            <div class="stat-item"><div class="stat-number">10%</div><div class="stat-label">Per Milestone</div></div>
-            <div class="stat-item"><div class="stat-number">6 mo</div><div class="stat-label">Window</div></div>
-          </div>
-          <p>* Within 6 months window, keep adding 10% DISCOUNT (upto 40%) after every 5 notarization for your whole family.</p>
-          <a href="#contact" class="btn btn-dark"><i class="fa-solid fa-paper-plane"></i> Contact Us Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="page faq-section" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge reveal"><i class="fa-solid fa-circle"></i> FAQs</div>
-        <h2 class="reveal">Frequently Asked <em>Questions</em></h2>
-        <p class="reveal">Everything you need to know about our notary services.</p>
-      </div>
-      <div class="faq-list">
-        <div class="faq-item reveal"><button class="faq-question">What areas do you serve? <i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>We provide mobile notary services in and around Milpitas and the surrounding Bay Area, including Fremont, Newark, Santa Clara, San Jose, and Sunnyvale. We come directly to your location.</p></div></div>
-        <div class="faq-item reveal reveal-delay-1"><button class="faq-question">Are you available on weekends and holidays? <i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Yes, we offer 24-hour mobile notary services, including weekends and holidays. Just give us a call and we'll schedule a time that works for you.</p></div></div>
-        <div class="faq-item reveal reveal-delay-2"><button class="faq-question">What documents can you notarize? <i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>We handle acknowledgements, oaths and jurats, certified copies, power of attorney, trusts, last wills, and more. Contact us if you have a specific document in mind.</p></div></div>
-        <div class="faq-item reveal reveal-delay-3"><button class="faq-question">How does the family discount plan work? <i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>Within a 6-month window, you keep adding 10% discount (up to 40%) after every 5 notarizations for your whole family. The more you use our services, the more you save.</p></div></div>
-        <div class="faq-item reveal reveal-delay-4"><button class="faq-question">What do I need to bring for a notarization? <i class="fa-solid fa-plus"></i></button><div class="faq-answer"><p>You'll need a valid, government-issued photo ID (driver's license or passport), the document(s) to be notarized, and all signers must be present at the time of notarization.</p></div></div>
+      <div class="reviews-link reveal">
+        <a href="https://www.google.com/maps?cid=13621364110696285173" target="_blank" rel="noopener">
+          <svg class="google-g" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+          <span>Read all our reviews on Google</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -304,7 +325,7 @@
   <!-- Footer -->
   <footer>
     <div class="container footer-inner">
-      <p>Copyright &copy; 2025 WeSignForYou, Ltd. All Rights Reserved.</p>
+      <p>Copyright &copy; <span id="year">2025</span> WeSignForYou, Ltd. All Rights Reserved.</p>
       <div class="social-links">
         <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
         <a href="https://www.yelp.com/biz/wesignforyou-notary-milpitas" target="_blank" rel="noopener" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
